@@ -1,0 +1,22 @@
+{
+  "albums": [
+    {
+      "name": "Testavimas 1 pavadinimas ilgesnis paziuret kaip atrodo",
+      "thumbnail": "albumo_thumbnail_1.jpg",
+      "description": "Cia atliekamas testavimas rasau teksta kad butu bent 20 zodziu paziuret kaip atrodo gamta nuotrauka wow beleka",
+      "route": "./public/images/album_images/testavimas-1-pavadinimas-ilgesnis-paziuret-kaip-atrodo"
+    },
+    {
+      "name": "Testavimas 2",
+      "thumbnail": "albumo_thumbnail_2.jpg",
+      "description": "trumpesnis aprasymas",
+      "route": "./public/images/album_images/testavimas-2"
+    },
+    {
+      "name": "Testavimas 3",
+      "thumbnail": "albumo_thumbnail_3.jpg",
+      "description": "vidutinio ilgumo aprasymas kuriame telpa viskas ka imanoma aprasyt apie albuma",
+      "route": "./public/images/album_images/testavimas-3"
+    }
+  ]
+}

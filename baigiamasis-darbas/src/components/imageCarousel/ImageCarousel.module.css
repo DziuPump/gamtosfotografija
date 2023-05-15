@@ -1,0 +1,39 @@
+.carouselimgwrapper {
+  height: 500px;
+  width: 100%;
+  background: #e0e0e0;
+  display: block;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background: #e9e9e9;
+}
+
+.carouselImg {
+  object-fit: cover;
+  height: 80%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 50px;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: -1px 2px 13px 3px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: -1px 2px 13px 3px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: -1px 2px 13px 3px rgba(0, 0, 0, 0.57);
+}
+
+@media (max-width: 1200px) {
+  .carouselImg {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media (max-width: 750px) {
+  .carouselImg {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
