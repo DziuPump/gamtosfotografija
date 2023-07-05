@@ -12,3 +12,7 @@
   height: 65%;
   border-radius: 8px;
 }
+
+body {
+  background-color: #ffffff;
+}

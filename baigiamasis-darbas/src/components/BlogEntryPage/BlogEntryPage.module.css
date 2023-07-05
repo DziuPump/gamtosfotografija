@@ -1,0 +1,16 @@
+figure span span {
+  display: flex;
+  justify-content: center;
+}
+
+.blogWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 70px;
+  min-height: 100vh;
+}
+
+.blogContent {
+  width: 80%;
+}

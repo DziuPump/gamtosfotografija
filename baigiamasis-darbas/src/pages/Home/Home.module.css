@@ -5,10 +5,11 @@
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
   cursor: default;
+  margin-top: 60px;
 }
 
 .heroImg {
-  width: 101%;
+  width: 103%;
   height: 92.5vh;
   object-fit: cover;
   object-position: top;

@@ -1,0 +1,225 @@
+.aboutContainer {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.abouth1 {
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.aboutContent h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.aboutContent {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.aboutIntroduction {
+  width: 70%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.introductionLeft {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin-right: 30px;
+}
+
+.introductionLeft img {
+}
+
+.introImg {
+  width: 100%;
+}
+
+.introductionRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.introductionRight p {
+  width: 100%;
+  text-align: left;
+}
+
+.righth2 {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.abouthr {
+  width: 70%;
+}
+
+.abouthritem {
+  width: 50%;
+  display: none;
+}
+
+.irankiai h1 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.irankiai {
+  font-size: 40px;
+  display: flex;
+  width: 100%;
+}
+
+.irankiaiContainer h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.topParagraph {
+  text-align: center;
+}
+
+.irankiaiFirstRow {
+  display: flex;
+}
+
+.irankiaiContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstRowTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.secondRowTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.thirdRowTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.TopImage {
+  width: 40%;
+}
+
+.topTekstas {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.topTekstas h2 {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+}
+
+.irankiaiWrapper {
+  display: flex;
+}
+
+@media (max-width: 1150px) {
+  .aboutIntroduction {
+    flex-direction: column;
+  }
+  .introductionRight {
+    width: 70%;
+  }
+  .introductionLeft {
+    width: 70%;
+    margin-right: 0;
+  }
+  .irankiaiWrapper {
+    flex-direction: column;
+  }
+  .topTekstas {
+    justify-content: center;
+  }
+  .firstRowTop {
+    flex-direction: row-reverse;
+    margin-bottom: 0;
+  }
+  .secondRowTop {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  .thirdRowTop {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 800px) {
+  .firstRowTop {
+    flex-direction: column-reverse;
+  }
+  .secondRowTop {
+    flex-direction: column-reverse;
+  }
+  .thirdRowTop {
+    flex-direction: column-reverse;
+  }
+  .abouthritem {
+    margin-top: 40px;
+    width: 70%;
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .abouth1 {
+    font-size: 20px;
+  }
+  .introductionLeft {
+    width: 100%;
+  }
+  .irankiaiContainer h1 {
+    font-size: 30px;
+  }
+}

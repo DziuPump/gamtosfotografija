@@ -9,29 +9,57 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
 }
 
-.galleryHeader {
-  margin-top: 50px;
-  height: 100px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
+.h1Container h1 {
+  font-size: 40px;
+  font-weight: 300;
 }
-h1 {
-  font-size: 50px;
+
+.h1Container h1::first-letter {
+  text-transform: capitalize;
+}
+
+.galleryHeader h1 {
+  font-size: 60px;
   font-weight: 400;
+}
+
+.leftText {
+  margin-top: 2rem;
+}
+
+.h1Container {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+}
+
+.paragraphContainer {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.paragraphContainer p::first-letter {
+  text-transform: capitalize;
 }
 
 .galleryContent {
   height: auto;
-  width: 80%;
-  background-color: #e4e4e4;
-  border-radius: 10px;
+  width: 90%;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .galleryPost {
@@ -43,7 +71,6 @@ h1 {
 .galleryPostRight {
   height: 100%;
   width: 100%;
-  max-width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,14 +85,9 @@ h1 {
 }
 
 .galleryPostRight img {
-  height: 80%;
-  max-width: 95%;
-  min-width: 250px;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: -1px 2px 13px 3px rgba(0, 0, 0, 0.57);
-  -webkit-box-shadow: -1px 2px 13px 3px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: -1px 2px 13px 3px rgba(0, 0, 0, 0.57);
+  width: 1173px;
+  height: 560px;
+  object-fit: cover;
 }
 
 .galleryPostLeft {
@@ -74,35 +96,38 @@ h1 {
   max-width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
+  margin-left: 20px;
 }
 
 .galleryPostLeft p {
   font-size: 120%;
 }
 
-button {
-  width: 150px;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #000000;
-  border: solid white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  border-radius: 20px;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.57);
-  -webkit-box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.57);
+.buttonContainer {
+  display: flex;
+  width: 100%;
 }
 
-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #000000;
-  border-color: white;
+.buttonContainer2 {
+  display: none;
 }
+
+.showMore {
+  color: #fc7a65;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 3px solid #fc7a65;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.showMore:hover {
+  color: gray;
+  border-bottom: 3px solid gray;
+}
+
 hr {
   width: 95%;
   border: 0;
@@ -111,8 +136,73 @@ hr {
   background-color: #ccc;
 }
 
+@media (max-width: 1660px) {
+  .galleryPostLeft {
+    align-items: center;
+    max-width: 80%;
+  }
+
+  .leftText {
+    display: flex;
+    width: 100%;
+  }
+
+  .galleryPostLeft p {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .h1Container {
+    width: 100%;
+  }
+
+  .galleryPostLeft h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .galleryContent {
+    width: 90%;
+  }
+  .galleryPost {
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .galleryPostRight img {
+    height: auto;
+    max-width: 100%;
+    min-width: 250px;
+    max-height: 90%;
+  }
+  .paragraphContainer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .buttonContainer {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1092px) {
   .galleryPostLeft {
+    align-items: center;
+    width: 100%;
+    min-width: 80%;
+  }
+
+  .leftText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .h1Container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -134,7 +224,7 @@ hr {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  button {
+  .galleryPostLeft button {
     margin-bottom: 40px;
   }
 }
@@ -145,13 +235,66 @@ hr {
     font-weight: 500;
     text-align: center;
   }
+  .galleryPostRight img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .buttonContainer {
+    display: none;
+  }
+
+  .buttonContainer2 {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .showMore2 {
+    color: #fc7a65;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-bottom: 3px solid #fc7a65;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 650px) {
-  button {
+  .galleryPostLeft button {
     width: auto;
     height: auto;
     padding: 10px;
     font-size: 19px;
+  }
+  .galleryPostRight img {
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 440px) {
+  .galleryPostRight img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .h1Container {
+    margin-bottom: 0;
+  }
+
+  .h1Container h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .galleryPostRight img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .paragraphContainer p {
+    font-size: 13px;
   }
 }

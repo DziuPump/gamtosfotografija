@@ -4,6 +4,13 @@ import "react-multi-carousel/lib/styles.css";
 import axios from "axios";
 import styles from "./ImageCarousel.module.css";
 
+import karusele1 from "../../images/Karusele_1.jpg";
+import karusele2 from "../../images/karusele_2.jpg";
+import karusele3 from "../../images/karusele_3.jpg";
+import karusele4 from "../../images/karusele_4.jpg";
+import karusele5 from "../../images/karusele_5.jpg";
+import karusele6 from "../../images/karusele_6.jpg";
+
 const ImageCarousel = (props) => {
   const [images, setImages] = useState([]);
 
@@ -18,7 +25,7 @@ const ImageCarousel = (props) => {
     };
 
     fetchImages();
-  }, []);
+  }, [props.folder]);
 
   const carouselResponsiveConfig = {
     superLargeDesktop: {
@@ -58,19 +65,54 @@ const ImageCarousel = (props) => {
       itemClass="carousel-item-padding-40-px"
       responsive={carouselResponsiveConfig}
     >
-      {images.map((image, index) => (
-        <>
-          <div key={image.fileName} className={styles.carouselimgwrapper}>
-            <img
-              src={`data:image/jpeg;base64,${image.base64Data}`}
-              alt="Carousel Image"
-              key={image.fileName}
-              className={styles.carouselImg}
-              draggable={false}
-            />
-          </div>
-        </>
-      ))}
+      <div className={styles.carouselimgwrapper}>
+        <img
+          src={karusele1}
+          alt={`Northern lights`}
+          className={styles.carouselImg}
+          draggable={false}
+        />
+      </div>
+      <div className={styles.carouselimgwrapper}>
+        <img
+          src={karusele2}
+          alt={`Lightning strike`}
+          className={styles.carouselImg}
+          draggable={false}
+        />
+      </div>
+      <div className={styles.carouselimgwrapper}>
+        <img
+          src={karusele3}
+          alt={`Curious squirell`}
+          className={styles.carouselImg}
+          draggable={false}
+        />
+      </div>
+      <div className={styles.carouselimgwrapper}>
+        <img
+          src={karusele4}
+          alt={`Foggy view of forest`}
+          className={styles.carouselImg}
+          draggable={false}
+        />
+      </div>
+      <div className={styles.carouselimgwrapper}>
+        <img
+          src={karusele5}
+          alt={`Old monastery from afar`}
+          className={styles.carouselImg}
+          draggable={false}
+        />
+      </div>
+      <div className={styles.carouselimgwrapper}>
+        <img
+          src={karusele6}
+          alt={`Pine tree in winter`}
+          className={styles.carouselImg}
+          draggable={false}
+        />
+      </div>
     </Carousel>
   );
 };

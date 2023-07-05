@@ -1,0 +1,72 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.inputField {
+  width: 40%;
+  min-width: 200px;
+  height: 30px;
+  border: 1px solid #cecece;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-color: gray;
+  border-style: solid;
+}
+
+.inputField:focus {
+  background: #f4f4f4;
+  border: 1px solid #ff8040;
+}
+
+.textAreaField {
+  width: 50%;
+  height: 100px;
+  min-width: 200px;
+  font-size: 15px;
+  padding: 5px;
+  max-width: 500px;
+}
+
+.textAreaField:focus {
+  background: #f4f4f4;
+  border: 1px solid #ff8040;
+}
+
+.wrapper label {
+  font-size: 26px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.submitButton {
+  margin: 20px;
+  width: 100px;
+  height: 50px;
+
+  cursor: pointer;
+  border-color: gray;
+  border-style: solid;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.submitButton:hover {
+  background: #e5e5e5;
+  border: 1px solid #ff8040;
+}
+
+.container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #009513;
+  font-size: 20px;
+}
+
+.pastas {
+  color: #ff5353;
+}

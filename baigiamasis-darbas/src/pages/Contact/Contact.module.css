@@ -1,0 +1,63 @@
+.contactWrapper h1 {
+  font-size: 40px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contactWrapper {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.content {
+  margin-top: 40px;
+  width: 80%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column-reverse;
+  background: #f7f5f3;
+}
+
+.contentLeft {
+  flex-grow: 2;
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialiniaiTinklai {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  height: 50%;
+}
+
+.socialiniaiTinklai a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.socialiniaiTinklai a:hover {
+  text-decoration: none;
+  color: #5b5bff;
+}
+
+.contentLeft h2 {
+  font-size: 35px;
+  margin-top: 50px;
+  font-weight: 300;
+}
+
+.contentRight {
+  flex-grow: 4;
+}

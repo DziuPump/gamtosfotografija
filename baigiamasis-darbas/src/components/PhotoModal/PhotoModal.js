@@ -9,11 +9,7 @@ const PhotoModal = ({ open, imageUrl, onClose }) => {
       <div className={styles.overlay} onClick={onClose} />
       <div className={styles.photoModalContainer} onClick={onClose}>
         <div className={styles.imgWrapper}>
-          <img
-            src={imageUrl}
-            alt="Modal image"
-            className={styles.modalImg}
-          ></img>
+          <img src={imageUrl} alt="Modal" className={styles.modalImg}></img>
         </div>
       </div>
     </>,

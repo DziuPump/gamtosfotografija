@@ -1,0 +1,91 @@
+input:focus {
+  background-color: white;
+}
+
+.newEntryModal div {
+  background-color: white;
+}
+
+.newEntryModal textarea {
+  background-color: white;
+}
+
+.adminPanelWrapper {
+  margin-top: 60px;
+  width: 100%;
+  height: calc(100vh-60px);
+}
+
+.adminPanelContainer {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.adminH1 {
+  margin-top: 60px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.adminContent {
+  display: flex;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.category ul {
+  list-style: none;
+}
+
+.category li {
+  margin-top: 30px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.categoryList {
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 40px;
+  padding: 40px;
+}
+
+.newEntryModal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.submitButton {
+  width: 200px;
+  height: 40px;
+}
+
+.selectedImage {
+  width: 200px;
+  height: 200px;
+}
+
+.blogInputField {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 12px;
+}
