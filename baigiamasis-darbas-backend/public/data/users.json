@@ -1,1 +1,20 @@
-{"users":[{"vardas":"barack","password":"obama"},{"vardas":"joe","password":"biden"},{"vardas":"testas","password":"testauskas"}]}
+{
+  "users": [
+    {
+      "username": "testanas",
+      "password": "$2b$10$8rt5RfesnpeRQaw.W9eqpOoLFMeO7j7bz1VKLEi3SzhVs.BX7tqBC"
+    },
+    {
+      "username": "username",
+      "password": "$2b$10$Nk6iZ2tHTrNEfl0.d9pmXeySVmVQw6ZflOCcei0Gqf2D9dDbGIi/e"
+    },
+    {
+      "username": "testas2",
+      "password": "$2b$10$uXuzZMMssMA001ZVwLNJbudQARf0md652cXCJA/UEEuo0gw/5l2IS"
+    },
+    {
+      "username": "testas3",
+      "password": "$2b$10$KZvEpD8R7Mr9QROfztTad.CRWMRIppSXAytV3BQ23eu27Kohduoxa"
+    }
+  ]
+}

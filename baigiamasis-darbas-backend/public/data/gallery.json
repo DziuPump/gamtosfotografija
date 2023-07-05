@@ -1,10 +1,10 @@
 {
   "albums": [
     {
-      "name": "Testavimas 1 pavadinimas ilgesnis paziuret kaip atrodo",
-      "thumbnail": "albumo_thumbnail_1.jpg",
-      "description": "Cia atliekamas testavimas rasau teksta kad butu bent 20 zodziu paziuret kaip atrodo gamta nuotrauka wow beleka",
-      "route": "./public/images/album_images/testavimas-1-pavadinimas-ilgesnis-paziuret-kaip-atrodo"
+      "name": "Enchanting Visions",
+      "thumbnail": "1685099597677-Utenos rytas panorama.jpg",
+      "description": "Embark on a captivating journey through the mesmerizing world of Enchanting Visions. This album invites you to explore a collection of breathtaking photographs that evoke emotions, spark imagination, and celebrate the beauty of our world. From stunning landscapes to intimate portraits, each image tells a unique story, capturing fleeting moments and preserving them for eternity. Immerse yourself in the enchantment of photography and let these visions transport you to extraordinary realms.",
+      "route": "./public/images/album_images/enchanting-visions"
     },
     {
       "name": "Testavimas 2",
@@ -17,6 +17,12 @@
       "thumbnail": "albumo_thumbnail_3.jpg",
       "description": "vidutinio ilgumo aprasymas kuriame telpa viskas ka imanoma aprasyt apie albuma",
       "route": "./public/images/album_images/testavimas-3"
+    },
+    {
+      "name": "testavimas 1",
+      "thumbnail": "1684752369429-albumo_thumbnail_1.jpg",
+      "description": "testavimas pavyko",
+      "route": "./public/images/album_images/testavimas-1"
     }
   ]
 }
